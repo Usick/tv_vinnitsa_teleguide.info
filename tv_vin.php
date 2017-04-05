@@ -33,8 +33,8 @@ while ($temp = (fgets($handle))) {
         while (!preg_match('/<\/(programme|channel)>/', $temp)) {
             $temp = fgets($handle);
             echo $temp;
-        };
-    };
+        }
+    }
 }
 //Выводим закрывающий тэг
 echo '</tv>', PHP_EOL;
