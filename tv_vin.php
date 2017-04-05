@@ -40,3 +40,4 @@ while ($temp = (fgets($handle))) {
 //Выводим закрывающий тэг
 echo '</tv>', PHP_EOL;
 fclose($handle);
+?>
