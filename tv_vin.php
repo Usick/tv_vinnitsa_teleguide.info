@@ -23,7 +23,6 @@ $handle = fopen('xmltv.xml', 'r');
 //Выводить только список каналов?
 $only_channels = false;
 $pattern = $only_channels ? '/<channel id=.*>/' : '/<.*channel.*="' . $ids . '">/';
-
 //Выводим "шапку" xmltv'шки
 echo '<?xml version="1.0" encoding="utf-8" ?><!DOCTYPE tv SYSTEM "http://www.teleguide.info/download/xmltv.dtd">', PHP_EOL;
 echo '<tv generator-info-name="TVH_W/0.751l" generator-info-url="http://www.teleguide.info/">', PHP_EOL;
@@ -40,4 +39,4 @@ while ($temp = (fgets($handle))) {
 //Выводим закрывающий тэг
 echo '</tv>', PHP_EOL;
 fclose($handle);
-?>
+//(c) Usick 2017
